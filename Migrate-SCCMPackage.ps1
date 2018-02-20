@@ -1,3 +1,7 @@
+<#
+This script reads in the packages from SCCM using the sitecode variable and then replaces part of the installed location string.
+This is required when performing migrations from one server to another or possibly cross domain 
+#>
 Import-module "D:\Program Files\Microsoft Configuration Manager\AdminConsole\bin\ConfigurationManager.psd1" 
 
 $OriginalSource = "\\sourcesccm"
