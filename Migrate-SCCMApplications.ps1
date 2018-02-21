@@ -18,7 +18,7 @@ $ApplicationName = $ApplicationName.LocalizedDisplayName
 
 foreach($application in $ApplicationName) 
 { 
-    $DeploymentTypeName = Get-CMDeploymentType -ApplicationName $x 
+    $DeploymentTypeName = Get-CMDeploymentType -ApplicationName $application
 
     ForEach($DT in $DeploymentTypeName) 
     { 
